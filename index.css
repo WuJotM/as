@@ -1,0 +1,67 @@
+#canvas {
+    -webkit-box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid yellow;
+}
+
+@keyframes ruch {
+    0% {background-position:0 0, 0 0, 0 0;}
+    100% {background-position:10000px 0, 7500px 0, 5000px 0;}
+}
+
+#f {
+    background-color:yellow;
+    font:16px Arial;
+}
+#mogus {
+    -webkit-box-sizing: border-box;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    background-color:rgba(0, 22, 224, 0.7);
+    border:6px solid yellow;
+    background-image:url('https://webkod.pl/images/para1.png'),
+                     url('https://webkod.pl/images/para2.png'),
+                     url('https://webkod.pl/images/para3.png');
+    animation:ruch 300s linear infinite alternate;
+
+}
+#mogus1 {
+    bottom:0;
+    border:6px solid yellow;
+    position: absolute;
+    left:50%;
+    text-align: center;
+    transform:translateX(-50%);
+    background-color:rgba(0, 22, 224, 0.7);
+}
+a {
+    text-decoration: none;
+    color:yellow;
+    font-size:20px;
+}
+#mogus2 {
+    background-color:rgba(0, 22, 224, 0.7);
+    border:6px solid yellow;
+    position:absolute;
+    left:50%;
+    top: 50%;
+    text-align: center;
+    transform:translateX(-50%) translateY(-50%);
+    padding: 1vw;
+}
+h1 {
+    margin: 0;
+    color:white;
+    white-space:nowrap;
+}
+h4 {
+    margin: 0;
+    color:yellow;
+    white-space:nowrap;
+}
